@@ -3,11 +3,10 @@ package com.itheima.controller;
 import com.itheima.pojo.Dept;
 import com.itheima.pojo.Result;
 import com.itheima.service.DeptService;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -36,5 +35,25 @@ public class DeptController {
         // 将部门列表数据封装到统一响应结果中并返回给前端
         // Controller向前端返回封装了部门列表数据的统一响应结果
         return  Result.success(deptList);
+    }
+
+    //删除部门
+    @DeleteMapping("/depts")
+    //方法一
+//    public Result delete(HttpServletRequest  request){
+//        String idStr = request.getParameter("id");
+//        int id = Integer.parseInt(idStr);
+//        System.out.println("根据id删除部门数据"+id);
+//    }
+    //方法二
+//    public Result delete(@RequestParam("id") Integer deptId){
+//        System.out.println("根据id删除部门数据"+deptId);
+//        return Result.success();
+//    }
+    //方法三
+    public Result delete( Integer id){
+        System.out.println("根据id删除部门数据"+id);
+        deptService.deleteById(id);
+        return Result.success();
     }
 }

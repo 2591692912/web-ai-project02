@@ -33,4 +33,9 @@ public class DeptServiceImpl implements DeptService {
         return deptMapper.findALL();
         // Mapper向Service返回部门列表数据
     }
+
+    @Override
+    public void deleteById(Integer id) {
+        deptMapper.deleteById(id);
+    }
 }

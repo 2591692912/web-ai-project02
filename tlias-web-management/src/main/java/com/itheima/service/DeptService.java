@@ -16,4 +16,6 @@ public interface DeptService {
      * Service向Controller提供部门列表数据
      */
     List<Dept> findAll();
+
+    void deleteById(Integer id);
 }
