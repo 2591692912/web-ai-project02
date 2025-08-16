@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: tlias-web-management
+#配置数据库链接信息
+  datasource:
+    url: jdbc:mysql://localhost:3306/tlias
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: shu200306
+
+#Mybatis的相关配置
