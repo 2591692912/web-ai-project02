@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/7b64cc8c-f969-43a8-a956-1697721700ce/console_11.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/tlias-web-management/src/main/java/com/itheima/mapper/DeptMapper.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/tlias-web-management/src/main/resources/com/itheima/mapper/EmpExprMapper.xml" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/tlias-web-management/src/main/resources/com/itheima/mapper/EmpMapper.xml" dialect="GenericSQL" />
   </component>
   <component name="SqlResolveMappings">
     <file url="file://$PROJECT_DIR$/tlias-web-management/src/main/java/com/itheima/mapper/DeptMapper.java" scope="{&quot;node&quot;:{  &quot;@negative&quot;:&quot;1&quot;,  &quot;group&quot;:{   &quot;@kind&quot;:&quot;root&quot;,   &quot;node&quot;:{    &quot;@negative&quot;:&quot;1&quot;   }  } }}" />
